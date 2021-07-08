@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/prismjs@1.22.0/themes/prism.css"
+    />
+    <script
+      src="https://unpkg.com/prismjs@1.22.0/components/prism-core.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/prismjs@1.22.0/plugins/autoloader/prism-autoloader.min.js"
+      defer
+    ></script>
+    <title>DA Web Test</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span>DA Web test</span>
+        <span>100 bodů</span>
+      </h1>
+
+      <h2>
+        <span>HTML a CSS</span>
+        <span>22 bodů</span>
+      </h2>
+
+      <div id="q01" class="question">
+        <a href="#q01" class="question__num">1.</a>
+        <div class="question__body">
+          <div class="question__text">
+            Určete, jakou barvu pozadí bude mít tlačítko s nápisem
+            <em>E-mail us!</em> pro následující HTML:
+            <pre><code class="language-html"><!--
+          -->&lt;section class="footer"&gt;
+<!--      -->  &lt;div class="contacts"&gt;
+<!--      -->    &lt;button class="email"&gt;E-mail us!&lt;/button&gt;
+<!--      -->  &lt;/div&gt;
+<!--      -->&lt;/section&gt;<!--
+          --></code></pre>
+
+            a CSS:
+            <pre><code class="language-css"><!--
+          -->section .email {
+<!--      -->  background-color: blue;
+<!--      -->}
+<!--      -->.contacts .email {
+<!--      -->  background-color: yellow;
+<!--      -->}
+<!--      -->div.contacts button {
+<!--      -->  background-color: green;
+<!--      -->}
+<!--      -->section button.email {
+<!--      -->  background-color: pink;
+<!--      -->}<!--
+          --></code></pre>
+          </div>
+
+          <ol class="question__answers" type="A">
+            <li>modrou</li>
+            <li>žlutou</li>
+            <li>zelenou</li>
+            <li>růžovou</li>
+          </ol>
+        </div>
+        <div class="question__points">4 body</div>
+      </div>
+
+      <div id="q02" class="question">
+        <a href="#q02" class="question__num">2.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>Předpokládejte, že máme následující HTML strukturu:</p>
+            <pre><code class="language-html"><!--
+          -->&lt;div class="box"&gt;
+<!--      -->  &lt;h2&gt;Kontakt&lt;/h2&gt;
+<!--      -->  &lt;a href="mailto:info@czechitas.cz"&gt;info@czechitas.cz&lt;/a&gt;&lt;br&gt;
+<!--      -->  &lt;a href="https://www.czechitas.cz/cs/kontakt"&gt;www.czechitas.cz&lt;/a&gt;
+<!--      -->  &lt;button class="close"&gt;×&lt;/button&gt;
+<!--      -->&lt;/div&gt;<!--
+          --></code></pre>
+
+            <p>
+              Nastylujte třídu <code>box</code> tak, aby měla kolem sebe černý
+              rámeček o tloušťce <code>5px</code> a vnitřní obsah byl od něj
+              odsazený o <code>20px</code>. Napozicujte <code>close</code> do
+              pravého horního rohu boxu tak, aby byl nalepený na vnitřní okraje
+              rámečku.
+            </p>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q03" class="question">
+        <a href="#q03" class="question__num">3.</a>
+        <div class="question__body">
+          <div class="question__text">
+            Napište CSS, které prvkům s třídou <code>nadpis</code> nastaví
+            velikost písma na <code>1.5rem</code> a na větších obrazovkách
+            širokých aspoň 720 pixelů na <code>2rem</code>.
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q04" class="question">
+        <a href="#q04" class="question__num">4.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>Mějme následující HTML strukturu:</p>
+            <pre><code class="language-html"><!--
+          -->&lt;div class="row"&gt;
+<!--      -->  &lt;div class="column"&gt;
+<!--      -->    První sloupeček
+<!--      -->  &lt;/div&gt;
+<!--      -->  &lt;div class="column"&gt;
+<!--      -->    Druhý
+<!--      -->  &lt;/div&gt;
+<!--      -->  &lt;div class="column"&gt;
+<!--      -->    A úplně&lt;br&gt;
+<!--      -->    poslední sloupeček
+<!--      -->  &lt;/div&gt;
+<!--      -->&lt;/div&gt;<!--
+          --></code></pre>
+
+            <p>
+              Vytvořte CSS styly pro třídy <code>row</code> a
+              <code>column</code> tak, aby prvky s třídou <code>column</code>:
+            </p>
+
+            <ol>
+              <li>byly horizontálně (↔) vedle sebe,</li>
+              <li>každý zabíral třetinu řádku (tj. byly stejně široké),</li>
+              <li>
+                byly všechny zarovnané vertikálně (↕) na střed prvku
+                <code>.row</code>.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <h2>
+        <span>JavaScript</span>
+        <span>40 bodů</span>
+      </h2>
+
+      <div id="q05" class="question">
+        <a href="#q05" class="question__num">5.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>V HTML a JavaScriptu máme následující kód:</p>
+
+            <p>HTML:</p>
+            <pre><code class="language-html"><!--
+          -->&lt;button id="btn"&gt;Pozdravit&lt;/button&gt;<!--
+         --></code></pre>
+
+            <p>JavaScript:</p>
+            <pre><code class="language-js"><!--
+          -->const sayHello = () => {
+<!--      -->  console.log('ahoj');
+<!--      -->}<!--
+          --></code></pre>
+
+            <p>
+              Napište JavaScriptový kód, který zajistí, že se po kliknutí na
+              tlačítko zavolá funkce <code>sayHello</code>.
+            </p>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q06" class="question">
+        <a href="#q06" class="question__num">6.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>Uvažte následující kód</p>
+            <pre><code class="language-js"><!--
+          -->const titleElm = document.querySelector('#title');
+<!--      -->titleElm.textContent = 'My awesome webpage';<!--
+          --></code></pre>
+
+            <p>
+              Co je na stránce (v HTML nebo v JavaScriptu) s největší
+              pravděpodobností špatně, jestliže při jeho spuštění obdržíme tuto
+              chybu?
+            </p>
+
+            <pre><code class="language-html">Uncaught TypeError: Cannot set property 'textContent' of null</code></pre>
+
+            <p>Popište svůj způsob uvažování.</p>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q07" class="question">
+        <a href="#q07" class="question__num">7.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>Označte všechny možnosti, na co jde Webpack použít.</p>
+
+            <ol class="question__answers" type="A">
+              <li>Sestavení projektu do produkční podoby</li>
+              <li>Zveřejnění projektu na internet</li>
+              <li>
+                Zabalení JavaScriptových zdrojových kódů do jednoho výsledného
+                souboru.
+              </li>
+              <li>Zapojení Reactu do projektu.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="question__points">4 body</div>
+      </div>
+
+      <div id="q08" class="question">
+        <a href="#q08" class="question__num">8.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>
+              Vytvořte v čistém JavaScriptu komponentu <code>FridgeItem</code>,
+              která jako vstupní parametr přijímá objekt <code>props</code> s
+              třemi vlastnostmi: <code>name</code>, <code>type</code> a
+              <code>expiration</code>. Funkce <code>FridgeItem</code> na základě
+              údajů v objektu vrátí nově vytvořený DOM element s náledující
+              strukturou.
+            </p>
+
+            <pre><code class="language-html"><!--
+          -->&lt;div class="fridge-item"&gt;
+<!--      -->  &lt;div class="fridge-item__name"&gt;Smetana&lt;/div&gt;
+<!--      -->  &lt;div class="fridge-item__type"&gt;Mléčný výrobek&lt;/div&gt;
+<!--      -->  &lt;div class="fridge-item__expiration"&gt;12&lt;/div&gt;
+<!--      -->&lt;/div&gt;<!--
+          --></code></pre>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q09" class="question">
+        <a href="#q09" class="question__num">9.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>
+              Vytvořte pole objektů reprezentující obsah lednice. Objekty v poli
+              budou odpovídat struktuře <code>props</code> z předchozího
+              cvičení. Pole uložte do proměnné s názvem <code>lednice</code>.
+              Každý objekt v poli bude mít následující vlastnosti:
+            </p>
+
+            <ul>
+              <li><strong>name</strong>, např. máslo, rajčata</li>
+              <li><strong>type</strong>, např. mléčný výrobek, zelenina</li>
+              <li>
+                <strong>expiration</strong>, za kolik vyprší datum spotřeby
+              </li>
+            </ul>
+
+            <p>
+              Vaše pole by mělo obsahovat alespoň 5 objektů (= věcí v lednici),
+              z nichž alespoň jeden je typu zelenina.
+            </p>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q10" class="question">
+        <a href="#q10" class="question__num">10.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>
+              Z <code>handbags</code> pomocí metody na poli udělejte pole nové,
+              uložte si ho do proměnné <code>midRangeHandbags</code> a vypište
+              do konzole. Nové pole musí obsahovat všechny kabelky, které jsou
+              dražší než 10.000 a zároveň levnější než 100.000.
+            </p>
+
+            <pre><code class="language-js"><!--
+          -->const handbags = [
+<!--      -->  {
+<!--      -->    brand: 'Guess',
+<!--      -->    price: 3600,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'Chanel',
+<!--      -->    price: 225000,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'Prada',
+<!--      -->    price: 65000,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'Zara',
+<!--      -->    price: 1200,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'Louis Vuitton',
+<!--      -->    price: 80000,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'Hermès',
+<!--      -->    price: 607000,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'Saint Laurent',
+<!--      -->    price: 54000,
+<!--      -->  },
+<!--      -->  {
+<!--      -->    brand: 'F&F',
+<!--      -->    price: 400,
+<!--      -->  }
+<!--      -->];<!--
+          --></code></pre>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q11" class="question">
+        <a href="#q11" class="question__num">11.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>
+              Napište kód, který ze serveru na adrese uvedené níže získá JSON
+              data s podrobnostmi o České republice:
+            </p>
+
+            <pre><code class="language-html">https://restcountries.eu/rest/v2/alpha/cz</code></pre>
+
+            <p>
+              Do konzole vypište zjištěný počet obyvatel ČR (vlastnost
+              <code>population</code>).
+            </p>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <h2>
+        <span>React</span>
+        <span>38 bodů</span>
+      </h2>
+
+      <div id="q12" class="question">
+        <a href="#q12" class="question__num">12.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>K čemu v Reactu slouží takzvané JSX?</p>
+
+            <ol class="question__answers" type="A">
+              <li>Jde o náhradu za CSS styly.</li>
+              <li>
+                Jde o způsob, jak zapisovat HTML přímo do JavaScriptového kódu.
+              </li>
+              <li>Jde o speciální typ Reactového efektu.</li>
+              <li>Jde o bundlovací systém nahrazující Webpack.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="question__points">4 body</div>
+      </div>
+
+      <div id="q13" class="question">
+        <a href="#q13" class="question__num">13.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>Uvažte následující React komponentu:</p>
+
+            <pre><code class="language-jsx"><!--
+          -->import React, { useState } from 'react';
+<!--      -->
+<!--      -->export const LightSwitch = () => {
+<!--      -->  const [isOn, setIsOn] = useState(true);
+<!--      -->
+<!--      -->  return (
+<!--      -->    &lt;button
+<!--      -->      className=&quot;btn&quot;
+<!--      -->      onClick={() => setIsOn(!isOn)}
+<!--      -->    &gt;
+<!--      -->      Zhasnout
+<!--      -->    &lt;/button&gt;
+<!--      -->  );
+<!--      -->};<!--
+        --></code></pre>
+
+            <p>
+              <code>LightSwitch</code> při každém kliknutí na tlačítko mění
+              hodnotu stavu <code>isOn</code> z <code>true</code> na
+              <code>false</code> a obráceně.
+            </p>
+
+            <p>
+              Chceme, aby se tato změna projevila vizuálně i na tlačítku.
+              Předpokládejme, že v CSS máme nastylovanou třídu
+              <code>btn&#8288;-&#8288;-&#8288;on</code>. Když tuto třídu přidáme
+              na tlačítko, bude tlačítko zvýrazněné jako zapnuté. Třídu
+              <code>btn</code> mějme na tlačítku vždy.
+            </p>
+
+            <p>
+              Zároveň chceme, aby text tlačíka byl <code>Zhasnout</code> pouze v
+              případě, že <code>isOn</code> je <code>true</code>. V opačném
+              případě nastavte tlačítku text na <code>Rozsvítit</code>.
+            </p>
+
+            <p>
+              Upravte aplikaci uvedenou výše tak, aby se na tlačítku objevila
+              CSS třída <code>btn&#8288;-&#8288;-&#8288;on</code>, je-li stav
+              <code>isOn</code> nastaven na <code>true</code>. Je-li ve stavu
+              <code>isOn</code> hodnota <code>false</code>, třída na tlačítku
+              nebude.
+            </p>
+
+            <p>Jako řešení pošlete kód komponenty <code>LightSwitch</code>.</p>
+          </div>
+        </div>
+        <div class="question__points">6 bodů</div>
+      </div>
+
+      <div id="q14" class="question">
+        <a href="#q14" class="question__num">14.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>
+              Prohlédněte si vzorovou webovou aplikaci
+              <a href="https://czechitas-podklady-web.github.io/dadjokes/"
+                >Dad Jokes</a
+              >
+              napsanou pomocí čistého JavaScriptu. Aplikace zobrazuje vtip s
+              avatarem uživatele a dvěma tlačítky like a dislike. Vyzkoušejte
+              si, jak tlačítka fungují.
+            </p>
+
+            <p>Vaším úkolem bude vytvořit tutéž aplikaci v Reactu.</p>
+
+            <ol>
+              <li>
+                Celý kód vzorové aplikace najdete v
+                <a href="https://github.com/Czechitas-podklady-WEB/dadjokes"
+                  >tomto repozitáři</a
+                >. Na GitHubu si prohlédněte kód aplikace.
+              </li>
+
+              <li>
+                Pod svým GitHub účtem vytvořte repozitář s názvem
+                <code>dadjokes-react</code>. Repozitář si naklonujte do počítače
+                a vytvořenou složku si otevřete ve VS Code.
+              </li>
+
+              <li>
+                Ve VS Code otevřete terminál a vytvořte uvnitř složky novou
+                React aplikaci pomocí příkazu
+                <pre><code class="language-sh">$ npx create-czechitas-app .</code></pre>
+              </li>
+
+              <li>
+                Naprogramujte vaši Reactovou aplikaci tak, aby dělala přesně
+                totéž a vypadala přesně stejně, jako vzorová aplikace. Stačí
+                vytvořit jednu komponentu <code>App</code>. Ze vzorové aplikace
+                můžete vykrást libovolný kód, který se vám bude v Reactu hodit.
+              </li>
+
+              <li>
+                Jako odpověď na tuto otázku uveďte odkaz na váš GitHub
+                repozitář.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="question__points">14 bodů</div>
+      </div>
+
+      <div id="q15" class="question">
+        <a href="#q15" class="question__num">15.</a>
+        <div class="question__body">
+          <div class="question__text">
+            <p>Pokračujte v projektu z předchozí otázky.</p>
+
+            <ol>
+              <li>
+                Vytvořte komponentu <code>Joke</code>, která zobrazuje jeden
+                vtip. Tato komponenta bude sídlet ve vlastní složce se všemi
+                potřebnými CSS styly a obrázky. Komponenta
+                <code>Joke</code> nechť má pět props: <code>userAvatar</code>,
+                <code>userName</code>, <code>text</code>, <code>likes</code>,
+                <code>dislikes</code>.
+              </li>
+              <li>
+                V hlavním souboru projektu importujte pole objektů ze souboru
+                <a
+                  href="https://raw.githubusercontent.com/Czechitas-podklady-WEB/daweb-test/main/jokes.js"
+                  >jokes.js</a
+                >. Zobrazte každý vtip z pole pomocí komponenty
+                <code>Joke</code>.
+              </li>
+              <li>
+                Zvažte, která vlastnost ze zobrazovaných dat se nejlépe hodí pro
+                <code>key</code> prop vaší komponenty a použijte ji jako
+                <code>key</code>.
+              </li>
+            </ol>
+
+            <p>
+              Výsledná aplikace by měla zobrazovat seznam všech vtipů se
+              správnými uživateli a počty likeů. Tlačítka u každého vtipu by
+              měla fungovat tak, že mění počty likeů uvnitř každé jednotlivé
+              komponenty.
+            </p>
+
+            <p>
+              Pushněte svoje změny do repozitáře. Jako odpověď na tuto otázku
+              opět uveďte stejnou adresu svého GitHub projektu, jako jste uvedli
+              v předchozí otázce.
+            </p>
+          </div>
+        </div>
+        <div class="question__points">14 bodů</div>
+      </div>
+    </div>
+  </body>
+</html>
